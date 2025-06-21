@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Titan Header - Light Theme with Poppins</title>
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #fff;
+      color: #111;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Video Container */
+    .video-container {
+      position: relative;
+      width: 100%;
+    }
+
+    .video-container video {
+      width: 100%;
+      height: auto;
+      filter: brightness(1.05) contrast(1.05);
+    }
+
+.overlay-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  color: #000000;
+  padding: 14px 30px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none; /* important for links */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.overlay-button:hover {
+  background-color: #f1f1f1;
+  color: #111;
+  border-color: #ccc;
+}
+
+
+    header,
+    nav {
+      border-color: #ddd;
+    }
+
+    nav div {
+      cursor: pointer;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header -->
+  <header style="display: flex; align-items: center; justify-content: space-between; padding: 10px 25px; border-bottom: 1px solid #ddd;">
+    <!-- Logo -->
+    <div style="display: flex; align-items: center;">
+      <img src="./Images/titan-logo.svg" alt="Titan Logo" width="80" style="margin-right: 10px;">
+    </div>
+
+    <!-- Search Bar -->
+    <div style="flex: 1; margin: 0 20px;">
+      <input type="text" placeholder="Search women" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+    </div>
+
+    <!-- Icons -->
+    <div style="display: flex; gap: 20px; margin-left: 10px;">
+      <div>👤<br><small>Account</small></div>
+      <div>❤️<br><small>Wishlist</small></div>
+      <div>🛒<br><small>Cart</small></div>
+      <div>📦<br><small>Track Order</small></div>
+    </div>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav style="display: flex; justify-content: center; gap: 30px; padding: 10px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
+    <div>MEN</div>
+    <div>WOMEN</div>
+    <div>SMART WATCHES</div>
+    <div>PREMIUM WATCHES</div>
+    <div>WATCHES</div>
+    <div>INTERNATIONAL BRANDS</div>
+    <div>GIFTING</div>
+    <div>SALE</div>
+    <div>WATCH SERVICE</div>
+    <div>MORE</div>
+  </nav>
+
+  <!-- Video Section with Overlay Button -->
+  <div class="video-container">
+    <video 
+      src="./Images/WhatsApp Video 2025-06-21 at 22.25.26_fde80c8b.mp4" 
+      autoplay 
+      loop 
+      muted 
+      playsinline>
+    </video>
+    <a href="explore.html" class="overlay-button">Explore Now</a>
+  </div>
+
+</body>
+</html>
